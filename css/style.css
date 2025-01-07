@@ -1,26 +1,26 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
 }
 
-/* Header Styling */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #fff6f6ce;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 20px;
 }
 
-/* Section Styling */
+h1 {
+  text-shadow: 3px 3px 5px hsl(0, 100%, 61%), -3px -3px 5px hsl(197, 100%, 61%);
+}
+
 section {
   padding: 20px;
   margin: 20px;
@@ -29,10 +29,34 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styling */
+form {
+  text-align: center;
+}
+
 footer {
   text-align: center;
   padding: 10px;
   background-color: #333;
   color: white;
+}
+
+/* .pagination {
+
+} */
+.pagination a {
+  background-color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.pagination a.active {
+  background-color: hsl(198, 34%, 52%);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(active) {
+  background-color: hsl(0, 0%, 70%);
+  border-radius: 5px;
 }
