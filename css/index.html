@@ -19,6 +19,13 @@
         <label for="password">Password : </label>
         <input type="password" id="password" placeholder="Password" /><br />
 
+        <label for="confirmPassword">Confirm Password :</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        /><br />
+
         <label for="email">E-mail :</label>
         <input type="email" id="email" placeholder="abcd123@gmail.com" /><br />
 
@@ -76,5 +83,39 @@
       </div>
       <p>&copy; 2025 My Website</p>
     </footer>
+    <script>
+      // => to making sparate conditions
+      // function isValidate(password, username) {
+      //   if(password.length < 8){
+      //     return false;
+      //   }if(password.indexOf(" ") !== -1){
+      //     return false;
+      //   }if(password.indexOf(username) !== -1){
+      //     return false;
+      //   }return true;
+      // }
+
+      // => to making all condition in one line
+      // function isValidate(password, username) {
+      //   if (
+      //     password.length < 8 ||
+      //     password.indexOf(" ") !== -1 ||
+      //     password.indexOf(username) !== -1
+      //   ) {
+      //     return flase;
+      //   }
+      //   return true;
+      // }
+
+      // => to making variable
+      function isValidate(password, username) {
+        const firstRule = password.length < 8;
+        const secondRule = password.indexOf(" ") !== -1;
+        const thirdRule = password.indexOf(username) !== -1;
+
+        if (firstRule || secondRule || thirdRule) return false;
+        return true;
+      }
+    </script>
   </body>
 </html>
