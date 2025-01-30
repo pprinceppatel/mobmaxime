@@ -1,6 +1,6 @@
 /*
 
-=> function
+=> function : 
 
 // function pname(nickname){
     // console.log(`Hie, ${name}` )
@@ -68,7 +68,7 @@ function isBlack(color){
       //   }return true;
       // }
 
-      // => to making all condition in one line
+// => to making all condition in one line
       // function isValidate(password, username) {
       //   if (
       //     password.length < 8 ||
@@ -80,7 +80,7 @@ function isBlack(color){
       //   return true;
       // }
 
-      // => to making variable
+// => to making variable
       function isValidate(password, username) {
         const firstRule = password.length < 8;
         const secondRule = password.indexOf(" ") !== -1;
