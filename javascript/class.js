@@ -4,10 +4,10 @@
 
 => There are main four types :
 
-    1. encapsulation
+    1. encapsulation :
     2. Abstraction : jaruri data ne (#xyz) vade hude kato block kari sakay. ae class puratu j reh 
     3. polymorphism : ek ek na comman vastu ne alag alag class ma 
-    4. inheritance 
+    4. inheritance : 
 
 
     class User {
@@ -24,8 +24,7 @@
 
     }
 
-        const User1 = new User("Prince", "Patel")
-
+    const User1 = new User("Prince", "Patel")
 
 
 
